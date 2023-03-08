@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="testgamejs.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    
+</style>
+</head>
+
+    
+    <body>
+    <script>
+        let h = window.innerHeight;
+        let w = window.innerWidth;
+        let eX = w/2
+        let eY = h/2
+       //declare the jumper object
+       var jumper = new jumper()
+
+        function setup() {
+            createCanvas(w,h)
+
+        }
+
+        function draw() {
+            clear()
+            rectMode(CENTER)
+            rect(eX,eY,100,100)
+                eX = eX - 3;
+                if(eX <=1){
+                    rect(window.innerWidth,random(0,h),100,100)
+                    eX = w
+                    eY = random(40,h-100)
+                }
+            
+            jumper.show()
+            jumper.update()
+    
+        }
+
+        function keyPressed() {
+            if(keyCode == 32){
+                jumper.jump()
+            }
+            
+        }
+    </script>
+</body>
+</html>

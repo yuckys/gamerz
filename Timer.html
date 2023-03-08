@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="p5.js"></script>
+<style>
+    #time{
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+
+    
+    <body>
+        <div id="time"></div>
+    <script>
+        let h = window.innerHeight;
+        let w = window.innerWidth;
+        //set variable to hold milliseconds
+        let ms
+        function setup() {
+            createCanvas(w,h);
+        }
+
+        function draw(){
+            ms = millis() / 1000
+            document.getElementById('time').innerHTML = ms.toFixed(0)
+            //stop draw loop when seconds hits five
+            if (ms >= 5){
+                document.getElementById('time').innerHTML = "TIMES UP"
+                noLoop()
+            }
+        }
+    </script>
+</body>
+</html>

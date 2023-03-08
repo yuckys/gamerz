@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css">
+    <script src="testgamejs.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    
+    
+</style>
+</head>
+
+    
+    <body id="bk">
+    <script>
+        let h = window.innerHeight;
+        let w = window.innerWidth;
+        let eX = w-w+10
+        let eX2 = w-10
+        let x = w/2
+        let y = h/2
+        let y2 = h/2
+       //declare the jumper object
+       var jumper = new jumper()
+
+        function setup() {
+            createCanvas(w,h)
+
+        }
+
+        function draw() {
+            rectMode(CENTER)
+            fill(256,6,256,256);
+            rect(eX,y,10,100,20,20)
+            fill(222,222,222,222)
+            rect(eX2,y2,10,100,20,20)
+        }
+        
+    </script>
+</body>
+</html>
