@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     
-    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="page1.css">
     <script src="testgamejs.js"></script>
     <script src="p5.js"></script>
     <script src="p5.min.js"></script>
@@ -19,10 +19,15 @@
         <h1 id="Ping">Asain credits</h1>
 
         <div id="beginning_box">
-            <button id="play" onclick="window.location.href='beginning_page.html';">PLAY</button>
+            <button id="play" onclick="window.location.href='page2_beginning_page.html';">PLAY</button>
             <button id="creator" onclick="window.location.href='author.html';">AUTHOR</button>
         </div>
     <script>
+        function preload() {
+            soundFormats('mp3')
+            mysound = loadSound('mp3.mp3')
+            mysound2 = loadSound('geese.wav')
+        }
         let w = window.innerWidth
         let h = window.innerHeight
         let wx = w/2
