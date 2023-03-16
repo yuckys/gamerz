@@ -24,11 +24,27 @@
 #play{
     position: absolute;
     left: 265px;
+    top: 50px;
     color: black;
+    background-color: transparent;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#play:hover{
+    cursor: pointer;
 }
 #creator{
     position: absolute;
     left: 240px;
     color: black;
     top: 150px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bolder;
 }
+#creator:hover{
+    cursor: pointer;
+}
+
