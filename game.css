@@ -71,8 +71,56 @@
 }
 #start_button{
 	text-align: center;
+	background-color: transparent;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#start_button:hover{
+	cursor: pointer;
+}
+#back_page{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	left: 3%;
+	top: 88%;
+	background-color: red;
+	border-radius: 25px;
+    outline-style: auto;
+    outline-color: orange;
+    outline-width: 3cm;
+}
+#back_button{
+	text-align: center;
+	background-color: transparent;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#back_button:hover{
+	cursor: pointer;
 }
 
+#home_screen_mom{
+	background-image: url("beginning.png");
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 35%;
+	bottom:10%;
+	animation: MoveUpDown 2s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    from {
+        bottom: 63px;
+    }
+    to { 
+        top: 100px;
+    }
+
+}
 
  
  
