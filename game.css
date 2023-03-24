@@ -122,5 +122,19 @@
 
 }
 
+#bk{
+	background-image: url(https://www.barlinek.co.uk/wp-content/uploads/2019/02/light-oak-laminate-flooring.jpg);
+	background-size: cover;
+}
+#sleep{
+	background-image: url("pixil-frame-0\ \(5\).png");
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 500px;
+	top: 310px;
+	transform: rotate(90deg);
+}
+
  
  
