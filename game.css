@@ -135,6 +135,69 @@
 	top: 310px;
 	transform: rotate(90deg);
 }
+#thought{
+	display:flex;
+	background-color:orange;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	left: 600px;
+	top:300px;
+	animation: hideAnimation 0s ease-in 7s;
+	animation-fill-mode: forwards;
+  }
+  @keyframes hideAnimation {
+	  to {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	  }
+	}
+  #Mom_screaming{
+	  opacity: 0;
+	  display:flex;
+	background-color:orange;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	left: 900px;
+	top:100px;
+	animation: showanimation 0s ease-in 5s;
+	animation-fill-mode: forwards;
+	animation: showanimation2 0s ease-in 8s;
+  }
+  @keyframes showanimation {
+	  from {
+		opacity: 0;
+	  }
+	  to{
+		  opacity: 1;
+	  }
+  
+	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
  
  
