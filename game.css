@@ -176,19 +176,31 @@
 	text-align:center;
 	left: 900px;
 	top:100px;
-	animation: showanimation 0s ease-in 5s;
+	animation: showanimation 5s ease-in-out 5s;
 	animation-fill-mode: forwards;
-	animation: showanimation2 0s ease-in 8s;
+	animation: hide1animation 2s ease-out 10s;
+	animation-fill-mode: forwards;
   }
   @keyframes showanimation {
 	  from {
 		opacity: 0;
 	  }
-	  to{
+	  to {
 		  opacity: 1;
 	  }
   
 	}
+	@keyframes hide1animation {
+		from {
+		  opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	
+	  }
+
+
   
   
   
