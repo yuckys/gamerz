@@ -8,24 +8,45 @@
     <script defer src="https://unpkg.com/p5.collide2d"></script>
     
     
-</style>
+    
+    <style>
+        #scoreboard{
+            position: absolute;
+            top: 0%;
+            left: 10%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            font-family: sans-serif;
+            font-size: 10em;
+        }
+    </style>
 </head>
 
     <span id="scoreboard"></span> 
     <script>
-
        //declare the jumper object
-       let w = window.innerWidth;
-       let h = window.innerHeight;
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        let eX = w/2
+        let eY = h-h
 
         function setup() {
             createCanvas(w,h)
         }
-
         function draw() {
+            //creates player chracter
             clear()
             circle(mouseX,h-100,50)
-
+            fill(0,0,0,256);
+            rect(eX,eY,10,10)
+            eY = eY + 3;
+            if(eY >= h-100 ){
+                
+                    eY = h-h
+                    eX = random(20,w)
+                    rect(eX,eY,10,10)
+            }
+            
         }
         
     </script>

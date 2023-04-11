@@ -17,15 +17,25 @@
        //declare the jumper object
        let w = window.innerWidth;
        let h = window.innerHeight;
+       let eX = w/2
+        let eY = h-h
 
         function setup() {
             createCanvas(w,h)
         }
 
         function draw() {
+            //creates player chracter
             clear()
             circle(mouseX,h-100,50)
-
+            fill(0,0,0,256);
+            rect(eX,eY,10,10)
+            eY = eY + 10;
+            if(eY <= 1){
+                    rect(window.innerWidth,random(w,0),10,10)
+                    eY = h
+                    eX = random(w,0)
+                }
         }
         
     </script>
