@@ -7,66 +7,85 @@
     <script src="p5.min.js"></script>
     <script defer src="https://unpkg.com/p5.collide2d"></script>
     
-    
+<style>
+#bk2{
+        background-image: url(https://img.freepik.com/premium-vector/interior-room-with-stairs-vector-illustration-cartoon-corridor_273525-788.jpg);
+        background-size: cover;
+    }
+#Nexte2{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	left: 3%;
+	top: 88%;
+	background-color: red;
+	border-radius: 25px;
+    outline-style: auto;
+    outline-color: orange;
+    outline-width: 3cm;
+}
+#Nexte2{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	left: 90%;
+	top: 88%;
+	background-color: red;
+	border-radius: 25px;
+    outline-style: auto;
+    outline-color: orange;
+    outline-width: 3cm;
+}
+#Next2{
+	text-align: center;
+	background-color: transparent;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+
+#Next2:hover{
+	cursor: pointer;
+}
+#thought2{
+    display:flex;
+	background-color:orange;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	left: 170px;
+	top:100px;
+}
 </style>
 </head>
 
     
-    <body id="background_page4">
-    <style>
-        #background_page4{
-            background-color: black;
-        }
-        #Easy{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 25px;
-            outline-style: auto;
-            outline-color: orange;
-            outline-width: 3cm;
-            position: absolute;
-            left: 450px;
-            top: 250px;
-        }
-        #Easy_tit{
-            color: black;
-            position: absolute;
-            top: 10px;
-            left: 18px;
-        }
-        
-        #Hard{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 25px;
-            outline-style: auto;
-            outline-color: orange;
-            outline-width: 3cm;
-            position: absolute;
-            left: 750px;
-            top: 250px;
-        }
-        #Hard_tit{
-            color: black;
-            position: absolute;
-            top: 10px;
-            left: 18px;
-        }
-    </style>
-    <div id="Easy"><h1 id="Easy_tit">Easy</h1></div>
-    <div id="Hard"><h1 id="Hard_tit">Hard</h1></div>
+    <body id="bk2">
+        <div id="sleep2"></div>
+        <div id ="thought2">Walking down the stairs you tripped and knocked things
+             over your mom heard it so your mom is now mad and throwing things at you</div>
+            <div id="Nexte2">
+            <button id="Next2" onclick="window.location.href='page5.html';">Next</button>
+        </div>
     <script>
+
+       //declare the jumper object
        var jumper = new jumper()
 
         function setup() {
             createCanvas(w,h)
-
         }
 
         function draw() {
-            
+
         }
         
     </script>

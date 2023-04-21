@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css">
+    <script src="testgamejs.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    
+
+</head>
+<style>
+    #scoreboard{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        font-family: sans-serif;
+        font-size: 1em;
+    }
+    #health{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        font-family: sans-serif;
+        font-size: 1em;
+    }
+</style>
+    <span id="scoreboard"></span>
+    <h2 id="health"></h2> 
+    <script>
+       //declare the jumper object
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        let eX = w/2
+        let eY = h-h
+        let hit = false;
+        let score = 0;
+        let health = 3;
+
+        function setup() {
+            createCanvas(w,h)
+        }
+        function draw() {
+            //creates player chracter
+            clear()
+            rectMode(CENTER)
+            rect(mouseX,h-100,50,50)
+            fill(0,0,0,256);
+            rect(eX,eY,10,10)
+            eY = eY + 5;
+            if(eY >= h){
+                eY = h-h
+                eX = random(20,w)
+                rect(eX,eY,10,10)
+                document.getElementById('health').innerHTML= health -=1
+                if (health == 0){
+                    window.open("lost.html")
+                }
+            }
+            else if ((mouseX+ 25 < eX || mouseX - 25 > eX) && (h-10 <= eY)){
+                eY = h-h
+                eX = random(20,w)
+                rect(eX,eY,10,10)
+                document.getElementById('scoreboard').innerHTML= score +=1
+                if (score == 30){
+                    window.open("page8.html")
+                }
+            }
+
+            
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
+        
+        
+        
+    </script>
+</body>
+</html>

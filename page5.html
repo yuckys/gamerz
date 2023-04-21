@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css">
+    <script src="testgamejs.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    
+    
+</style>
+</head>
+
+    
+    <body id="background_page4">
+    <style>
+        #background_page4{
+            background-color: black;
+        }
+        #Easy{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 25px;
+            outline-style: auto;
+            outline-color: orange;
+            outline-width: 3cm;
+            position: absolute;
+            left: 450px;
+            top: 250px;
+        }
+        #Easy_tit{
+            position: absolute;
+            top: 30px;
+            left: 10px;
+	        background-color: transparent;
+            border-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        #Easy_tit:hover{
+            cursor:pointer
+        }
+        #Hard{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 25px;
+            outline-style: auto;
+            outline-color: orange;
+            outline-width: 3cm;
+            position: absolute;
+            left: 750px;
+            top: 250px;
+        }
+        #Hard_tit{
+            text-align: center;
+            position: absolute;
+            top: 30px;
+            left: 10px;
+	        background-color: transparent;
+            border-style: none;
+            font-size: 30px;
+            font-weight: bolder;           
+        }
+        #Hard_tit:hover{
+            cursor: pointer;
+    }
+    </style>
+    <div id="Easy"><button id="Easy_tit" onclick="window.location.href='page6easy.html';">Easy</button></div>
+    <div id="Hard"><button id="Hard_tit" onclick="window.location.href='page7hard.html';">Hard</button></div>
+    <script>
+       var jumper = new jumper()
+
+        function setup() {
+            createCanvas(w,h)
+
+        }
+
+        function draw() {
+            
+        }
+        
+    </script>
+</body>
+</html>
